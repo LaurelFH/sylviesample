@@ -1,3 +1,6 @@
+/*.body{
+	background: #FFFFFF;
+}*/
 .grid {
 	margin: 0 auto;
 	max-width: 50em;
@@ -11,7 +14,7 @@
 	height: 2.05em;
 	padding: 0.35em 0.5em;
 	border-radius: 4px;
-	background: #62b989;
+	background: #6D96C1;
 	color: #a3e0be;
 	font-size: 1.5em;
 	text-align: left;
@@ -74,13 +77,14 @@
 	width: 100%;
 	width: calc(100% + 20px);
 	height: 100%;
-	background: #76d39f;
+	background: #6D96C1;
 	text-align: center;
 	overflow: auto;
 	-webkit-transition: -webkit-transform 0.5s cubic-bezier(0.6,0,0.4,1);
 	transition: transform 0.5s cubic-bezier(0.6,0,0.4,1);
 	-webkit-transform: translate3d(0,20px,0);
 	transform: translate3d(0,20px,0);
+	border: blue 5px solid;
 }
 
 .drop-area.show {
@@ -193,6 +197,18 @@
 	position: absolute !important;
 	margin: 0;
 }
+
+.content{
+	border: 5px red solid;
+}
+
+.codrops-demos{
+	border: 5px orange solid;
+}
+
+/*.current-demo{
+	border: 5px black solid;
+}*/
 
 @media screen and (max-width: 50em) {
 	.grid__item {
