@@ -1,132 +1,61 @@
-<!DOCTYPE html>
-<html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Drag and Drop Interaction Ideas For Sylvie | Bottom Area</title>
-		<meta name="description" content="Inspiration for drag and drop interactions for the modern UI" />
-		<meta name="keywords" content="drag and drop, interaction, inspiration, web design, ui" />
-		<meta name="author" content="Codrops" />
-		<link rel="shortcut icon" href="../favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/bottom-area.css" />
-		<script src="js/modernizr.custom.js"></script>
-	</head>
-	<body>
-		<div class="container">
-			<!-- Top Navigation -->
-			<div class="codrops-top clearfix">
-				<a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Development/MorphingSearch/"><span>Previous Demo</span></a>
-				<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=21275"><span>Back to the Codrops Article</span></a></span>
-			</div>
-			<div class="content">
-				<header class="codrops-header">
-					<h1>Drag and Drop Interaction Ideas <span>Inspiration for drag and drop interactions for the modern UI</span></h1>
-					<nav class="codrops-demos">
-						<a class="current-demo" href="index.html">Bottom Area</a>
-						<a href="sidebar.html">Sidebar</a>
-						<a href="page-scale.html">Page Scale</a>
-						<a href="modal.html">Modal</a>
-						<a href="icons.html">Icons</a>
-						<a href="bottom-slide.html">Bottom Slide</a>
-						<a href="reveal.html">Reveal</a>
+<!doctype html><html lang="en"><head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+			<!-- Custom styles for this template -->
+			<link href="css/sticky-footer.css" rel="stylesheet">
+				<title>Landing Page V1</title>
+			</head>
+			<body>
+				<!--Navbar with general info and links-->
+				<nav class="navbar navbar-light bg-light">
+					<a class="navbar-brand" href="#">
+						<img src="/img/related/sylvie horizontal.ai" width="30" height="30" class="d-inline-block align-top" alt="">Sylvie</a>
 					</nav>
-				</header>
-				<div id="grid" class="grid clearfix">
-					<div class="grid__item"><i class="fa fa-puzzle-piece"></i></div>
-					<div class="grid__item"><i class="fa fa-fw fa-image"></i></div>
-					<div class="grid__item"><i class="fa fa-fw fa-image"></i></div>
-					<div class="grid__item"><i class="fa fa-fw fa-image"></i></div>
-					<div class="grid__item"><i class="fa fa-fw fa-image"></i></div>
-					<div class="grid__item"><i class="fa fa-fw fa-image"></i></div>
-					<div class="grid__item"><i class="fa fa-fw fa-image"></i></div>
-					<div class="grid__item"><i class="fa fa-fw fa-image"></i></div>
-					<div class="grid__item"><i class="fa fa-fw fa-image"></i></div>
-					<div class="grid__item"><i class="fa fa-fw fa-image"></i></div>
-					<div class="grid__item"><i class="fa fa-fw fa-image"></i></div>
-					<div class="grid__item"><i class="fa fa-fw fa-image"></i></div>
-				</div>
-				<!-- Related demos -->
-				<!-- <section class="related">
-					<p>If you enjoyed this demo you might also like:</p>
-					<a href="http://tympanus.net/Development/DraggableDualViewSlideshow/">
-						<img src="img/related/DualViewSlideshow.png" alt="Dual-View Slideshow Image"/>
-						<h3>Draggable Dual-View Slideshow</h3>
-					</a>
-					<a href="http://tympanus.net/Development/ButtonComponentMorph/">
-						<img src="img/related/MorphingButtons.png" alt="Morphing Buttons Image" />
-						<h3>Morphing Buttons Concept</h3>
-					</a>
-				</section> -->
-			</div><!-- /content -->
-		</div><!-- /container -->
-		<div id="drop-area" class="drop-area">
-			<div>
-				<div class="drop-area__item"><div class="dummy"></div></div>
-				<div class="drop-area__item"><div class="dummy"></div></div>
-				<div class="drop-area__item"><div class="dummy"></div></div>
-				<div class="drop-area__item"><div class="dummy"></div></div>
-			</div>
-		</div>
-		<div class="drop-overlay"></div>
-		<script src="js/draggabilly.pkgd.min.js"></script>
-		<script src="js/dragdrop.js"></script>
-		<script>
-			(function() {
-				var body = document.body,
-					dropArea = document.getElementById( 'drop-area' ),
-					droppableArr = [], dropAreaTimeout;
-
-				// initialize droppables
-				[].slice.call( document.querySelectorAll( '#drop-area .drop-area__item' )).forEach( function( el ) {
-					droppableArr.push( new Droppable( el, {
-						onDrop : function( instance, draggableEl ) {
-							// show checkmark inside the droppabe element
-							classie.add( instance.el, 'drop-feedback' );
-							clearTimeout( instance.checkmarkTimeout );
-							instance.checkmarkTimeout = setTimeout( function() { 
-								classie.remove( instance.el, 'drop-feedback' );
-							}, 800 );
-							// ...
-						}
-					} ) );
-				} );
-
-				// initialize draggable(s)
-				[].slice.call(document.querySelectorAll( '#grid .grid__item' )).forEach( function( el ) {
-					new Draggable( el, droppableArr, {
-						draggabilly : { containment: document.body },
-						onStart : function() {
-							// add class 'drag-active' to body
-							classie.add( body, 'drag-active' );
-							// clear timeout: dropAreaTimeout (toggle drop area)
-							clearTimeout( dropAreaTimeout );
-							// show dropArea
-							classie.add( dropArea, 'show' );
-						},
-						onEnd : function( wasDropped ) {
-							var afterDropFn = function() {
-								// hide dropArea
-								classie.remove( dropArea, 'show' );
-								// remove class 'drag-active' from body
-								classie.remove( body, 'drag-active' );
-							};
-
-							if( !wasDropped ) {
-								afterDropFn();
-							}
-							else {
-								// after some time hide drop area and remove class 'drag-active' from body
-								clearTimeout( dropAreaTimeout );
-								dropAreaTimeout = setTimeout( afterDropFn, 400 );
-							}
-						}
-					} );
-				} );
-			})();
-		</script>
-	</body>
-</html>
+					<!-- Jumbotron Image and text -->
+					<div class="jumbotron jumbotron-fluid">
+						<div class="container">
+							<h1 class="display-3">3D Printing</h1>
+							<p class="lead">Synchronise customer experience so that we disrupt the balance. Generate stakeholder engagement with a goal to funnel users. Leveraging user stories yet surprise and delight.</p>
+						</div>
+					</div>
+					<!--adding url for sylvie-->
+					<div id="umiwebchat-container"></div>
+					<script>var LandbotLiveConfig = { index: 'https://landbot.io/u/H-34312-M34GSFK9G76RUOLN/index.html', accent: '#99badd' };</script>
+					<script src="https://static.helloumi.com/umiwebchat/umiwebchat.js" defer></script>
+					<!--cards with quick start or remix info-->
+					<div class="card-deck">
+						<div class="card">
+							<div class="card-body">
+								<h4 class="card-title">Who is Sylvie?</h4>
+								<p class="card-text">Utilise awareness while remembering to think outside the box. Funnel empathy maps yet disrupt the balance. Engage mobile-first design so that we create actionable insights. Utilise stakeholder management and finally use best practice.</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-body">
+								<h4 class="card-title">Visit Your Profile</h4>
+								<p class="card-text">Demonstrating best in class with a goal to target the low hanging fruit. Generating big data yet get buy in. Informing user stories and possibly increase viewability. Funneling brand integration with the aim to create a better customer experience. </p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-body">
+								<h4 class="card-title">"Remix" New Ideas</h4>
+								<p class="card-text">Repurpose blue-sky thinking yet increase viewability. Engaging key demographics and possibly think outside the box. Drive best in class yet target the low hanging fruit. Generating transformation mapping yet be on brand.</p>
+							</div>
+						</div>
+					</div>
+					<!--some sort of footer with contact info or copyright etc-->
+					<footer class="footer">
+						<div class="container">
+							<span class="text-muted">Place sticky footer content with info about us here.</span>
+						</div>
+					</footer>
+					<!-- Optional JavaScript -->
+					<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+					<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+					<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+				</body>
+			</html>
