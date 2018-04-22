@@ -20,17 +20,26 @@
 //   ignoreInputTextSelection: true     // allows users to select input text, see details below
 // });
 
-function $(id) {
-  return document.getElementById(id);
-}
+// function $(id) {
+//   return document.getElementById(id);
+// }
 
-dragula([$('drag-elements'), $('drop-target')], {
-  revertOnSpill: true
-}).on('drop', function(el) {
-  if ($('drop-target').children.length > 0) {
-    $('display').innerHTML = $('drop-target').innerHTML;
-  } else {
-    $('display').innerHTML = "Display";
-  }
+// dragula([$('drag-elements'), $('drop-target')], {
+//   revertOnSpill: true
+// }).on('drop', function(el) {
+//   if ($('drop-target').children.length > 0) {
+//     $('display').innerHTML = $('drop-target').innerHTML;
+//   } else {
+//     $('display').innerHTML = "Display";
+//   }
 
-});
+// });
+
+// Simple list
+Sortable.create(simpleList, { /* options */ });
+
+// List with handle
+// Sortable.create(listWithHandle, {
+//   handle: '.glyphicon-move',
+//   animation: 150
+// });

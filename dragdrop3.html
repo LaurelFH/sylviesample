@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!--link to extra stylesheet-->
    <link href="css/dragdrop3.css" rel="stylesheet">
-   <!--link to dragula stylesheet-->
-   <link rel="stylesheet" href="dist/dragula.css">
+<!-- Latest Sortable CDN-->
+<script src="http://rubaxa.github.io/Sortable/Sortable.js"></script> 
 
-    <title>Testing Dragula and remixing</title>
+
+    <title>Testing Sortable and remixing</title>
   </head>
 
   <body>
- <!--link to Dragula-->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/$VERSION/dragula.min.js'></script>
+
 
 
           <!--navbar embedded in a header-->
@@ -62,25 +62,27 @@
       </header>
 
       <!--drag and drop space-->
+<div class="container">
+  <!-- Simple Lesson Plan List -->
+  <div id="simpleList" class="list-group">
+    <div class="list-group-item"><img src="img/bustwarmup.png" class="img-thumbnail" alt="bustwarmup"></div>
+    <div class="list-group-item"><img src="img/readrespond_activity.png" class="img-thumbnail" alt="read respond"></div>
+    <div class="list-group-item"><img src="img/researching artifacts activity.png" class="img-thumbnail" alt="reseraching artifacts"></div>
+    <div class="list-group-item"><img src="img/visual analysis activity.png" class="img-thumbnail" alt="visual analysis"></div>
+    <div class="list-group-item"><img src="img/create a panel activity.png" class="img-thumbnail" alt="panel activity"></div>
+  </div><!--ends the list-->
 
-<div class ="container">
-  <h1>Drag and drop activities to "remix" this lesson plan</h1>
-  <div class ="left">
-    <div id="drag-elements">
-        <div>Element 1</div>
-        <div>Element 2</div>
-        <div>Element 3</div>
-    </div>
- 
-   <div id="drop-target">
-    </div>
-  </div>
-  <div class="right">
-    <div id="display">Display</div>
-  </div>
+
+
+<div id="displayarea">
+<h1> this is a display space</h1>
+
 </div>
 
 
+
+
+</div>  <!--ends container-->
 
 
 
@@ -168,13 +170,13 @@
               <script src="https://static.helloumi.com/umiwebchat/umiwebchat.js" defer></script>
 
 
-    <!-- Optional JavaScript -->
+     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
     <script src="js/dragdrop3.js"></script>
-     <!--link to Dragula-->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/$VERSION/dragula.min.js'></script>
+ 
   </body>
 </html>
