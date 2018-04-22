@@ -36,7 +36,13 @@
 // });
 
 // Simple list
-Sortable.create(simpleList, { /* options */ });
+Sortable.create(simpleList, { /* options */ 
+  animation: 150,
+
+
+
+
+});
 
 // List with handle
 // Sortable.create(listWithHandle, {

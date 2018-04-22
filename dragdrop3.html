@@ -18,8 +18,6 @@
 
   <body>
 
-
-
           <!--navbar embedded in a header-->
       <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
@@ -34,24 +32,7 @@
                   <span class="sr-only">(current)</span>
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="profile.html">Profile</a>
-              </li>
-<!--               <li class="nav-item">
-                <a class="nav-link disabled" href="#">Resources</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="landingv2.html">landing page 2</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="landingv3.html">landing page 3</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="bottom-area.html">Remixing pages</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">Upcoming Features</a>
-              </li> -->         
+      
           </ul>
           <form class="form-inline mt-2 mt-md-0">
             <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
@@ -60,83 +41,60 @@
           </div>
         </nav>
       </header>
-
+<!--header with info on what to do -->
+    <div>
+        <h1>
+          Remix the lesson plan! <small>Mix and match activities to create a new lesson plan</small>
+        </h1>
+      </div>
+<!--info descirption list-->
+<dl>
+        <dt>
+          Description lists
+        </dt>
+        <dd>
+          A description list is perfect for defining terms.
+        </dd>
+        <dt>
+          Euismod
+        </dt>
+        <dd>
+          Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
+        </dd>
+        <dd>
+          Donec id elit non mi porta gravida at eget metus.
+        </dd>
+      </dl>
       <!--drag and drop space-->
-<div class="container">
+<div class="container-fluid">
+  <div class="row">
+   <div><img src="img/bustwarmup.png" class="img-thumbnail col-md-8" alt="bustwarmup"></div>
   <!-- Simple Lesson Plan List -->
-  <div id="simpleList" class="list-group">
-    <div class="list-group-item"><img src="img/bustwarmup.png" class="img-thumbnail" alt="bustwarmup"></div>
+  <div id="simpleList" class="list-group col-md-6">
+   
     <div class="list-group-item"><img src="img/readrespond_activity.png" class="img-thumbnail" alt="read respond"></div>
     <div class="list-group-item"><img src="img/researching artifacts activity.png" class="img-thumbnail" alt="reseraching artifacts"></div>
     <div class="list-group-item"><img src="img/visual analysis activity.png" class="img-thumbnail" alt="visual analysis"></div>
     <div class="list-group-item"><img src="img/create a panel activity.png" class="img-thumbnail" alt="panel activity"></div>
   </div><!--ends the list-->
 
-
-
-<div id="displayarea">
+<div id="displayArea" class="col-md-3">
 <h1> this is a display space</h1>
 
 </div>
 
 
+<div id="displayClock" class="col-md-3">
+<h1> this is a clock space</h1>
 
+</div>
 
 </div>  <!--ends container-->
 
 
-
-
-
-
-
-
-<!--testing out card columns which should be "draggable"-->
-<!-- <div class="card-group">
-  <div class="card">
-    <img class="card-img-top" src="img/confetti.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
-    </div>
-  </div> -->
- <!--  <div class="card">
-    <img class="card-img-top" src="img/pencils.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-    </div> -->
-<!--     <div class="card">
-    <img class="card-img-top" src="img/bustwarmup.png" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="img/readrespond_activity.png" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
-    </div>
-  </div>
-</div> -->
-
-<!--containers for cards-->
-
-
 <!--Finish and Save button-->
-<button class="btn btn-default">
-     <img src="img/finish button.png" width ="200px" data-toggle="modal" data-target="#finishSaveModal">
+<button class="btn btn-default ">
+     <img src="img/finish button.png" width="300px" data-toggle="modal" data-target="#finishSaveModal">
 </button>
 
 <!-- Finish Button Save Modal -->
@@ -154,7 +112,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+       <!--  <button type="button" class="btn btn-primary">Save changes</button> -->
       </div>
     </div>
   </div>
@@ -180,3 +138,17 @@
  
   </body>
 </html>
+
+<!--to do-->
+
+<!--
+
+reread docs https://github.com/RubaXa/Sortable#cdn
+  1. fix styling colors/image clean up
+  2. fix sizing so everythign shifts to the left and display for clock is in the right side
+  3. extra animations 
+  4.survey questions and script updates?
+  5.  for the clock or ratings, add modals or popovers with "hints" or other ratings info
+  6.  create add activity button "moderation"
+
+-->
