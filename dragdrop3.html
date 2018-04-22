@@ -10,14 +10,14 @@
     <!--link to extra stylesheet-->
    <link href="css/dragdrop3.css" rel="stylesheet">
    <!--link to dragula stylesheet-->
-   <link rel="stylesheet" href="dist/dragula.min.css">
+   <link rel="stylesheet" href="dist/dragula.css">
 
-    <title>Testign Dragula and remixing</title>
+    <title>Testing Dragula and remixing</title>
   </head>
 
   <body>
  <!--link to Dragula-->
- <script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/$VERSION/dragula.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/$VERSION/dragula.min.js'></script>
 
 
           <!--navbar embedded in a header-->
@@ -51,8 +51,7 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link disabled" href="#">Upcoming Features</a>
-              </li> -->
-            
+              </li> -->         
           </ul>
           <form class="form-inline mt-2 mt-md-0">
             <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
@@ -62,10 +61,36 @@
         </nav>
       </header>
 
+      <!--drag and drop space-->
 
+<div class ="container">
+  <h1>Drag and drop activities to "remix" this lesson plan</h1>
+  <div class ="left">
+    <div id="drag-elements">
+        <div>Element 1</div>
+        <div>Element 2</div>
+        <div>Element 3</div>
+    </div>
  
+   <div id="drop-target">
+    </div>
+  </div>
+  <div class="right">
+    <div id="display">Display</div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
 <!--testing out card columns which should be "draggable"-->
-<div class="card-group">
+<!-- <div class="card-group">
   <div class="card">
     <img class="card-img-top" src="img/confetti.jpg" alt="Card image cap">
     <div class="card-body">
@@ -75,14 +100,14 @@
     <div class="card-footer">
       <small class="text-muted">Last updated 3 mins ago</small>
     </div>
-  </div>
+  </div> -->
  <!--  <div class="card">
     <img class="card-img-top" src="img/pencils.jpg" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
     </div> -->
-    <div class="card">
+<!--     <div class="card">
     <img class="card-img-top" src="img/bustwarmup.png" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
@@ -102,12 +127,36 @@
       <small class="text-muted">Last updated 3 mins ago</small>
     </div>
   </div>
-</div>
+</div> -->
 
 <!--containers for cards-->
 
 
+<!--Finish and Save button-->
+<button class="btn btn-default">
+     <img src="img/finish button.png" width ="200px" data-toggle="modal" data-target="#finishSaveModal">
+</button>
 
+<!-- Finish Button Save Modal -->
+<div class="modal fade" id="finishSaveModal" tabindex="-1" role="dialog" aria-labelledby="finishSaveModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Lessons Remixed!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Your Remixed lesson has been saved.  Please check for a confirmation email.  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
@@ -117,11 +166,15 @@
               <div id="umiwebchat-container"></div>
               <script>var LandbotLiveConfig = { index: 'https://landbot.io/u/H-34312-M34GSFK9G76RUOLN/index.html', accent: '#99badd' };</script>
               <script src="https://static.helloumi.com/umiwebchat/umiwebchat.js" defer></script>
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="js/dragdrop3.js"></script>
+     <!--link to Dragula-->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/$VERSION/dragula.min.js'></script>
   </body>
 </html>
