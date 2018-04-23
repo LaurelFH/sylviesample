@@ -1,51 +1,51 @@
-// dragula(containers, {
-//   isContainer: function (el) {
-//     return false; // only elements in drake.containers will be taken into account
-//   },
-//   moves: function (el, source, handle, sibling) {
-//     return true; // elements are always draggable by default
-//   },
-//   accepts: function (el, target, source, sibling) {
-//     return true; // elements can be dropped in any of the `containers` by default
-//   },
-//   invalid: function (el, handle) {
-//     return false; // don't prevent any drags from initiating by default
-//   },
-//   direction: 'vertical',             // Y axis is considered when determining where an element would be dropped
-//   copy: false,                       // elements are moved by default, not copied
-//   copySortSource: false,             // elements in copy-source containers can be reordered
-//   revertOnSpill: false,              // spilling will put the element back where it was dragged from, if this is true
-//   removeOnSpill: false,              // spilling will `.remove` the element, if this is true
-//   mirrorContainer: document.body,    // set the element that gets mirror elements appended
-//   ignoreInputTextSelection: true     // allows users to select input text, see details below
-// });
-
-// function $(id) {
-//   return document.getElementById(id);
-// }
-
-// dragula([$('drag-elements'), $('drop-target')], {
-//   revertOnSpill: true
-// }).on('drop', function(el) {
-//   if ($('drop-target').children.length > 0) {
-//     $('display').innerHTML = $('drop-target').innerHTML;
-//   } else {
-//     $('display').innerHTML = "Display";
-//   }
-
-// });
-
-// Simple list
-Sortable.create(simpleList, { /* options */ 
-  animation: 150,
+//Warm-up List 
+Sortable.create(warmupList, {
+    group: {
+        name: "sharedWarm",
+        put: "sharedWarm",
+        revertClone: true,
+        sort: true
+    },
+    animation: 150,
+});
+console.log(warmupList);
 
 
+//Warmup Planner Space
+Sortable.create(displayWarmupArea, {
+    group: {
+        name: "sharedWarm",
+        put: "sharedWarm",
+        revertClone: true,
+        sort: true
+    },
+    animation: 150,
+    // draggable: "list-group-item"
+});
+console.log(displayWarmupArea);
 
+
+//Activity list
+Sortable.create(activityList, {
+    group: {
+        name: "sharedActs",
+        revertClone: true,
+        put: "sharedActs",
+        sort: true
+    },
+    animation: 150,
+});
+console.log(activityList);
+
+//Activity display space
+Sortable.create(displayActivityArea, {
+    group: {
+        name: "sharedActs",
+        sort: true,
+        revertClone: true,
+        put: "sharedActs"
+    },
+    animation: 150,
 
 });
-
-// List with handle
-// Sortable.create(listWithHandle, {
-//   handle: '.glyphicon-move',
-//   animation: 150
-// });
+console.log(displayActivityArea);

@@ -151,3 +151,27 @@
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
   filter: alpha(opacity=50);
 }*/
+
+#displayWarmupArea{
+
+  border: 2px solid green;
+
+}
+
+
+#displayActivityArea{
+
+ border: 2px solid red;
+
+}
+
+#activityList{
+  border: 2px solid blue;
+
+}
+
+#warmupList{
+border: 2px solid purple;
+
+
+}

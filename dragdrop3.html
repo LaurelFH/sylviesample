@@ -1,146 +1,137 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!--link to extra stylesheet-->
-   <link href="css/dragdrop3.css" rel="stylesheet">
-<!-- Latest Sortable CDN-->
-<script src="https://rubaxa.github.io/Sortable/Sortable.js"></script> 
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!--link to extra stylesheet-->
+  <link href="css/dragdrop3.css" rel="stylesheet">
+  <!-- Latest Sortable CDN-->
+  <script src="https://rubaxa.github.io/Sortable/Sortable.js"></script>
+  <title>Testing Sortable and remixing</title>
+</head>
 
-
-    <title>Testing Sortable and remixing</title>
-  </head>
-
-  <body>
-
-          <!--navbar embedded in a header-->
-      <header>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-          <a class="navbar-brand" href="#">Sylvie</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home 
-                  <span class="sr-only">(current)</span>
-                </a>
-              </li>
-      
-          </ul>
-          <form class="form-inline mt-2 mt-md-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-          </div>
-        </nav>
-      </header>
-<!--header with info on what to do -->
-    <div>
-        <h1>
-          Remix the lesson plan! <small>Mix and match activities to create a new lesson plan</small>
-        </h1>
+<body>
+  <!--navbar embedded in a header-->
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"> <a class="navbar-brand" href="#">Sylvie</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active"> <a class="nav-link" href="index.html">Home 
+                  
+                    <span class="sr-only">(current)</span>
+                  </a>
+          </li>
+        </ul>
+        <form class="form-inline mt-2 mt-md-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
       </div>
-<!--info descirption list-->
-<dl>
-        <dt>
+    </nav>
+  </header>
+  <!--header with info on what to do -->
+  <div>
+    <h1>
+          Remix the lesson plan! 
+              <small>Mix and match activities to create a new lesson plan</small>
+            </h1>
+  </div>
+  <!--info descirption list-->
+  <dl> <dt>
           Description lists
         </dt>
-        <dd>
-          A description list is perfect for defining terms.
-        </dd>
-        <dt>
+    <dd>A description list is perfect for defining terms.</dd> <dt>
           Euismod
         </dt>
-        <dd>
-          Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
-        </dd>
-        <dd>
-          Donec id elit non mi porta gravida at eget metus.
-        </dd>
-      </dl>
-      <!--drag and drop space-->
-<div class="container-fluid">
-  <div class="row">
-   <div><img src="img/bustwarmup.png" class="img-thumbnail col-md-8" alt="bustwarmup"></div>
-  <!-- Simple Lesson Plan List -->
-  <div id="simpleList" class="list-group col-md-6">
-   
-    <div class="list-group-item"><img src="img/readrespond_activity.png" class="img-thumbnail" alt="read respond"></div>
-    <div class="list-group-item"><img src="img/researching artifacts activity.png" class="img-thumbnail" alt="reseraching artifacts"></div>
-    <div class="list-group-item"><img src="img/visual analysis activity.png" class="img-thumbnail" alt="visual analysis"></div>
-    <div class="list-group-item"><img src="img/create a panel activity.png" class="img-thumbnail" alt="panel activity"></div>
-  </div><!--ends the list-->
-
-<div id="displayArea" class="col-md-3">
-<h1> this is a display space</h1>
-
-</div>
-
-
-<div id="displayClock" class="col-md-3">
-<h1> this is a clock space</h1>
-
-</div>
-
-</div>  <!--ends container-->
-
-
-<!--Finish and Save button-->
-<button class="btn btn-default ">
-     <img src="img/finish button.png" width="300px" data-toggle="modal" data-target="#finishSaveModal">
-</button>
-
-<!-- Finish Button Save Modal -->
-<div class="modal fade" id="finishSaveModal" tabindex="-1" role="dialog" aria-labelledby="finishSaveModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Lessons Remixed!</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+    <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+    <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+  </dl>
+  <!--drag and drop space main container-->
+  <div class="container-fluid">
+    <div class="row">
+      <!--warm-up List-->
+      <div id="warmupList" class="list-group col-md-4">
+        <div>
+          <img src="img/bustwarmup.png" class="img-thumbnail" alt="bustwarmup">
+        </div>
+        <div>
+          <img src="img/redesigning spaces warmup.png" class="img-thumbnail" alt="bustwarmup">
+        </div>
+        <div>
+          <img src="img/cultural artifacts warmup.png" class="img-thumbnail" alt="bustwarmup">
+        </div>
       </div>
-      <div class="modal-body">
-        Your Remixed lesson has been saved.  Please check for a confirmation email.  
+      <!-- Simple Lesson Plan List -->
+      <div id="activityList" class="list-group col-md-4">
+        <div class="list-group-item" data-id="1">
+          <img src="img/readrespond_activity.png" class="img-thumbnail" alt="read respond">
+        </div>
+        <div class="list-group-item" data-id="2">
+          <img src="img/researching artifacts activity.png" class="img-thumbnail" alt="reseraching artifacts">
+        </div>
+        <div class="list-group-item" data-id="3">
+          <img src="img/visual analysis activity.png" class="img-thumbnail" alt="visual analysis">
+        </div>
+        <div class="list-group-item" data-id="4">
+          <img src="img/create a panel activity.png" class="img-thumbnail" alt="panel activity">
+        </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-       <!--  <button type="button" class="btn btn-primary">Save changes</button> -->
+      <!--ends the list-->
+      <div id="displayWarmupArea" class="col-md-2">
+        <h1> this is a warmup display space</h1>
+      </div>
+      <div id="displayActivityArea" class="col-md-2">
+        <h1> this is a activity space</h1>
       </div>
     </div>
-  </div>
-</div>
-
-
-
-
-
-       <!--adding url for sylvie-->
-              <div id="umiwebchat-container"></div>
-              <script>var LandbotLiveConfig = { index: 'https://landbot.io/u/H-34312-M34GSFK9G76RUOLN/index.html', accent: '#99badd' };</script>
-              <script src="https://static.helloumi.com/umiwebchat/umiwebchat.js" defer></script>
-
-
-     <!-- Optional JavaScript -->
+    <div id="displayClock" class="col-md-3">
+      <h1> this is a clock space</h1>
+    </div>
+    <!--ends container-->
+    <!--Finish and Save button-->
+    <button class="btn btn-default ">
+      <img src="img/finish button.png" width="300px" data-toggle="modal" data-target="#finishSaveModal" id="saveButton">
+    </button>
+    <!-- Finish Button Save Modal -->
+    <div class="modal fade" id="finishSaveModal" tabindex="-1" role="dialog" aria-labelledby="finishSaveModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Lessons Remixed!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">Your Remixed lesson has been saved. Please check for a confirmation email.</div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <!--  <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--adding url for sylvie-->
+    <div id="umiwebchat-container"></div>
+    <script>
+      var LandbotLiveConfig = { index: 'https://landbot.io/u/H-34312-M34GSFK9G76RUOLN/index.html', accent: '#99badd' };
+    </script>
+    <script src="https://static.helloumi.com/umiwebchat/umiwebchat.js" defer></script>
+    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
-    <script src="js/dragdrop3.js"></script>
- 
-  </body>
+</body>
+<script src="js/dragdrop3.js"></script>
+</body>
+
 </html>
-
 <!--to do-->
-
 <!--
 
 reread docs https://github.com/RubaXa/Sortable#cdn
