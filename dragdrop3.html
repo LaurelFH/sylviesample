@@ -35,13 +35,9 @@
       </div>
     </nav>
   </header>
+
+
   <!--header with info on what to do -->
-  <div>
-    <h1>
-          Remix the lesson plan! 
-              <small>Mix and match activities to create a new lesson plan</small>
-            </h1>
-  </div>
   <!--info descirption list-->
   <dl> <dt>
           Description lists
@@ -52,6 +48,7 @@
     <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
     <dd>Donec id elit non mi porta gravida at eget metus.</dd>
   </dl>
+
   <!--drag and drop space main container-->
   <div class="container-fluid">
     <div class="row">
@@ -82,22 +79,27 @@
           <img src="img/create a panel activity.png" class="img-thumbnail" alt="panel activity">
         </div>
       </div>
-      <!--ends the list-->
-      <div id="displayWarmupArea" class="col-md-2">
+      <!--ends the activities list-->
+
+      <!--display the warmup area for the learner-->
+         <div class="col-md-4"> 
+          <div id="displayWarmupArea">
         <h1> this is a warmup display space</h1>
       </div>
-      <div id="displayActivityArea" class="col-md-2">
+  
+      <div id="displayActivityArea">
         <h1> this is a activity space</h1>
-      </div>
-    </div>
-    <div id="displayClock" class="col-md-3">
-      <h1> this is a clock space</h1>
-    </div>
-    <!--ends container-->
-    <!--Finish and Save button-->
+      </div> 
+         <!--Finish and Save button-->
     <button class="btn btn-default ">
       <img src="img/finish button.png" width="300px" data-toggle="modal" data-target="#finishSaveModal" id="saveButton">
     </button>
+    </div>
+   <!--  <div id="displayClock" class="col-md-3">
+      <h1> this is a clock space</h1>
+    </div> -->
+    <!--ends container-->
+
     <!-- Finish Button Save Modal -->
     <div class="modal fade" id="finishSaveModal" tabindex="-1" role="dialog" aria-labelledby="finishSaveModalCenterTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
