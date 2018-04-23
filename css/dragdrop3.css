@@ -156,6 +156,8 @@
 
 /*  border: 2px solid green;
 */  background-color: #74DAFF;
+text-align: center;
+padding: 5px;
 
 }
 
@@ -164,6 +166,8 @@
 
 /* border: 2px solid red;
 */  background-color: #B9FFFF;
+text-align: center;
+padding: 5px;
 
 }
 
@@ -214,6 +218,8 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 #informationSpace{
 
   color: #FFFFFF;
+  text-align: center;
+  padding: 5px;
     /*background-color: #DDDDDD;*/
     /*opacity: .2;*/
  /*background: rgb(166,163,219);
@@ -237,6 +243,7 @@ background: linear-gradient(0deg, rgba(166,163,219,0.7852183109571954) 0%, rgba(
 #remixNavbar{
   background-color: #F1F7FD;
   color: #A3A3A3;
+  
 }
 
 #projectHeader{
@@ -244,6 +251,8 @@ background: linear-gradient(0deg, rgba(166,163,219,0.7852183109571954) 0%, rgba(
    background-color: #343A40;
    color: #FFFFFF;
    border:#98D8C1 solid 2px;
+   text-align: center;
+    padding: 5px;
 
 }
 
@@ -255,6 +264,8 @@ background: linear-gradient(0deg, rgba(166,163,219,0.7852183109571954) 0%, rgba(
  background-color: #343A40;
    color: #FFFFFF;
    border:#98D8C1 solid 2px;
+   text-align: center;
+    padding: 5px;
 
 }
 
@@ -265,4 +276,6 @@ background: linear-gradient(0deg, rgba(166,163,219,0.7852183109571954) 0%, rgba(
 background-color: #343A40;
    color: #FFFFFF;
    border:#98D8C1 solid 2px;
+   text-align: center;
+    padding: 5px;
 }

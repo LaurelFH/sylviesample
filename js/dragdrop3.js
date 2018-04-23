@@ -57,7 +57,13 @@ function allowDrop(event) {
     event.preventDefault();
     // document.getElementById("warmupDemo").innerHTML = "";
     // document.getElementById("actDemo").innerHTML = "";
-    event.target.style.backgroundColor = "#FFFFFF";
+    // event.target.style.backgroundColor = "#FFFFFF";
+    // prompt("Confirm added activity?");
+    $("#warmupDemo").backgroundColor("#74DAFF");
+    $("#actDemo").backgroundColor("#B9FFFF");
+    // $("#warmupDemo").textColor("#74DAFF");
+    // $("#actDemo").empty();
+
 }
 
 function refreshPage(event){
