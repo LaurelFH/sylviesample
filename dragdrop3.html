@@ -47,7 +47,7 @@
     <dt>
           Instructions
         </dt>
-    <dd>Welcome to your "desk" space.  Drag and drop a warm-up and various activites to "Remix" lesson plan soggestions made by your peers.  </dd>
+    <dd>Welcome to your "desk" space.  Drag and drop a warm-up and various activites to "Remix" lesson plan suggestions made by your peers.  </dd>
     <dd>Be sure to save your ideas by clicking on the "Finish and Save" button to submit your remix to your peers for rating and review. </dd>
   </dl>
 
@@ -57,13 +57,13 @@
       <!--warm-up List-->
       <div id="warmupList" class="list-group col-md-4">
         <h1> Popular 3D Printing Projects</h1>
-        <div>
+        <div class="list-group-item">
           <img src="img/bustwarmup.png" class="img-thumbnail" alt="bustwarmup">
         </div>
-        <div>
+        <div class="list-group-item">
           <img src="img/redesigning spaces warmup.png" class="img-thumbnail" alt="bustwarmup">
         </div>
-        <div>
+        <div class="list-group-item">
           <img src="img/cultural artifacts warmup.png" class="img-thumbnail" alt="bustwarmup">
         </div>
       </div>
@@ -87,12 +87,19 @@
 
       <!--display the warmup area for the learner-->
          <div class="col-md-4" id="planningSpace"> 
+          <div>
+            <h1> Your Remixing Space</h1>
+          </div>
           <div id="displayWarmupArea" ondragover="allowDrop(event)">
-        <h1> Drag Your Warmup Here</h1>
+        <div>
+          <h1 id="warmupDemo"> Drag Your Warmup Here</h1>
+        </div>
       </div>
   
       <div id="displayActivityArea" ondragover="allowDrop(event)">
-        <h1> Drag Your Activities Here</h1>
+        <div>
+          <h1 id="actDemo"> Drag Your Activities Here</h1>
+        </div>
       </div> 
          <!--Finish and Save button-->
     <button class="btn btn-default ">
@@ -115,7 +122,7 @@
           </div>
           <div class="modal-body">Your Remixed lesson has been saved. Please check for a confirmation email.</div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="refreshPage(event)">Close</button>
             <!--  <button type="button" class="btn btn-primary">Save changes</button> -->
           </div>
         </div>
@@ -127,6 +134,16 @@
       var LandbotLiveConfig = { index: 'https://landbot.io/u/H-34312-M34GSFK9G76RUOLN/index.html', accent: '#99badd' };
     </script>
     <script src="https://static.helloumi.com/umiwebchat/umiwebchat.js" defer></script>
+
+      <!--some sort of footer with contact info or copyright etc-->
+              <footer class="footer">
+                <div class="container">
+                  <span class="text-muted">Place sticky footer content with info about us here.</span>
+                </div>
+              </footer>
+
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

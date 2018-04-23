@@ -154,31 +154,39 @@
 
 #displayWarmupArea{
 
-  border: 2px solid green;
-  background-color: #74DAFF;
+/*  border: 2px solid green;
+*/  background-color: #74DAFF;
 
 }
 
 
 #displayActivityArea{
 
- border: 2px solid red;
-  background-color: #B9FFFF;
+/* border: 2px solid red;
+*/  background-color: #B9FFFF;
 
 }
 
 #activityList{
-  border: 2px solid blue;
-
+/*  border: 2px solid blue;
+*/
 }
 
 #warmupList{
-border: 2px solid purple;
-
+/*border: 2px solid purple;
+*/
 
 }
 
 #planningSpace{
 
-  border: 2px solid orange;
+/*  border: 2px solid orange;
+*/}
+
+.list-group-item{
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+
 }

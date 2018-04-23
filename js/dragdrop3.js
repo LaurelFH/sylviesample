@@ -55,5 +55,11 @@ console.log(displayActivityArea);
 //color changes for dropevents
 function allowDrop(event) {
     event.preventDefault();
+    // document.getElementById("warmupDemo").innerHTML = "";
+    // document.getElementById("actDemo").innerHTML = "";
     event.target.style.backgroundColor = "#FFFFFF";
+}
+
+function refreshPage(event){
+  location.reload();
 }
