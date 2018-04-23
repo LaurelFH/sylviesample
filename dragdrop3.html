@@ -17,16 +17,21 @@
 <body>
   <!--navbar embedded in a header-->
   <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"> <a class="navbar-brand" href="#">Sylvie</a>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"> <a class="navbar-brand" href="index.html">Sylvie</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active"> <a class="nav-link" href="index.html">Home 
+<!--           <li class="nav-item active"> <a class="nav-link" href="index.html">Home 
                   
                     <span class="sr-only">(current)</span>
-                  </a>
+                  </a> -->
           </li>
+          <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Profile 
+                      
+                    </a>
+                  </li>
         </ul>
         <form class="form-inline mt-2 mt-md-0">
           <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
@@ -48,7 +53,11 @@
           Instructions
         </dt>
     <dd>Welcome to your "desk" space.  Drag and drop a warm-up and various activites to "Remix" lesson plan suggestions made by your peers.  </dd>
-    <dd>Be sure to save your ideas by clicking on the "Finish and Save" button to submit your remix to your peers for rating and review. </dd>
+    <dd>Be sure to save your new plan by clicking on the "Finish and Save" button to submit your remix to your peers for rating and review. </dd>
+             <!--Finish and Save button-->
+    <button class="btn">
+      <img src="img/finish button.png" width="300px" data-toggle="modal" data-target="#finishSaveModal" id="saveButton">
+    </button>
   </dl>
 
   <!--drag and drop space main container-->
@@ -59,28 +68,35 @@
         <h1> Popular 3D Printing Projects</h1>
         <div class="list-group-item">
           <img src="img/bustwarmup.png" class="img-thumbnail" alt="bustwarmup">
+          <img src="img/skullprint.jpg" class="img-thumbnail" alt="skull">
         </div>
         <div class="list-group-item">
-          <img src="img/redesigning spaces warmup.png" class="img-thumbnail" alt="bustwarmup">
+          <img src="img/redesigning spaces warmup.png" class="img-thumbnail" alt="redesign spaces">
+          <img src="img/building.jpg" class="img-thumbnail" alt="building">
         </div>
         <div class="list-group-item">
-          <img src="img/cultural artifacts warmup.png" class="img-thumbnail" alt="bustwarmup">
+          <img src="img/cultural artifacts warmup.png" class="img-thumbnail" alt="artifactwarmup">
+          <img src="img/artifact.jpg" class="img-thumbnail" alt="artifact">
         </div>
       </div>
       <!-- Simple Lesson Plan List -->
       <div id="activityList" class="list-group col-md-4">
-        <h1> Popular Writing and Research Activities </h1>
+        <h1>Writing and Research Activities </h1>
         <div class="list-group-item" data-id="1">
           <img src="img/readrespond_activity.png" class="img-thumbnail" alt="read respond">
+          <img src="img/students respond.jpg" class="img-thumbnail" alt="students on computer">
         </div>
         <div class="list-group-item" data-id="2">
-          <img src="img/researching artifacts activity.png" class="img-thumbnail" alt="reseraching artifacts">
+          <img src="img/researching artifacts activity.png" class="img-thumbnail" alt="researching artifacts">
+          <img src="img/researching culture.jpg" class="img-thumbnail" alt="computer and photogrpahy book">
         </div>
         <div class="list-group-item" data-id="3">
           <img src="img/visual analysis activity.png" class="img-thumbnail" alt="visual analysis">
+          <img src="img/visual analysis.jpg" class="img-thumbnail" alt="visual analysis">
         </div>
         <div class="list-group-item" data-id="4">
           <img src="img/create a panel activity.png" class="img-thumbnail" alt="panel activity">
+          <img src="img/panel.jpg" class="img-thumbnail" alt="conference room">
         </div>
       </div>
       <!--ends the activities list-->
@@ -101,10 +117,7 @@
           <h1 id="actDemo"> Drag Your Activities Here</h1>
         </div>
       </div> 
-         <!--Finish and Save button-->
-    <button class="btn btn-default ">
-      <img src="img/finish button.png" width="300px" data-toggle="modal" data-target="#finishSaveModal" id="saveButton">
-    </button>
+
     </div>
    <!--  <div id="displayClock" class="col-md-3">
       <h1> this is a clock space</h1>
@@ -135,10 +148,10 @@
     </script>
     <script src="https://static.helloumi.com/umiwebchat/umiwebchat.js" defer></script>
 
-      <!--some sort of footer with contact info or copyright etc-->
+            <!--some sort of footer with contact info or copyright etc-->
               <footer class="footer">
                 <div class="container">
-                  <span class="text-muted">Place sticky footer content with info about us here.</span>
+                  <span class="text-muted">Prototype Version 2 4/24/2018 EDUETCH 790/390 MPL.</span>
                 </div>
               </footer>
 
