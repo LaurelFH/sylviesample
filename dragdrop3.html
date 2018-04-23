@@ -44,7 +44,7 @@
 
   <!--header with info on what to do -->
   <!--info descirption list-->
-  <dl> 
+  <dl id="informationSpace"> 
     <dt>
           Description lists
         </dt>
@@ -108,13 +108,13 @@
           </div>
           <div id="displayWarmupArea" ondragover="allowDrop(event)">
         <div>
-          <h1 id="warmupDemo"> Drag Your Warmup Here</h1>
+          <h1 id="warmupDemo"> Drag a Warmup Here</h1>
         </div>
       </div>
   
       <div id="displayActivityArea" ondragover="allowDrop(event)">
         <div>
-          <h1 id="actDemo"> Drag Your Activities Here</h1>
+          <h1 id="actDemo"> Drag Activities Here</h1>
         </div>
       </div> 
 
@@ -133,7 +133,7 @@
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">Your Remixed lesson has been saved. Please check for a confirmation email.</div>
+          <div class="modal-body">Your remix has been saved. Please check back for confirmation and to see the number of points you have earned. </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="refreshPage(event)">Close</button>
             <!--  <button type="button" class="btn btn-primary">Save changes</button> -->
@@ -149,7 +149,7 @@
     <script src="https://static.helloumi.com/umiwebchat/umiwebchat.js" defer></script>
 
             <!--some sort of footer with contact info or copyright etc-->
-              <footer class="footer">
+              <footer class="footer" id="remixFooter">
                 <div class="container">
                   <span class="text-muted">Prototype Version 2 4/24/2018 EDUETCH 790/390 MPL.</span>
                 </div>
