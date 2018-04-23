@@ -15,10 +15,12 @@ console.log(warmupList);
 Sortable.create(displayWarmupArea, {
     group: {
         name: "sharedWarm",
-        put: "sharedWarm",
+        put: "sharedWarm"
+        },
         revertClone: true,
-        sort: true
-    },
+        sort: true,
+        pull: true,
+    
     animation: 150,
     // draggable: "list-group-item"
 });
@@ -49,3 +51,9 @@ Sortable.create(displayActivityArea, {
 
 });
 console.log(displayActivityArea);
+
+//color changes for dropevents
+function allowDrop(event) {
+    event.preventDefault();
+    event.target.style.backgroundColor = "#FFFFFF";
+}

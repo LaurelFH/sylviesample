@@ -155,6 +155,7 @@
 #displayWarmupArea{
 
   border: 2px solid green;
+  background-color: #74DAFF;
 
 }
 
@@ -162,6 +163,7 @@
 #displayActivityArea{
 
  border: 2px solid red;
+  background-color: #B9FFFF;
 
 }
 
@@ -174,4 +176,9 @@
 border: 2px solid purple;
 
 
+}
+
+#planningSpace{
+
+  border: 2px solid orange;
 }

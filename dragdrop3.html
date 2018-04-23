@@ -39,14 +39,16 @@
 
   <!--header with info on what to do -->
   <!--info descirption list-->
-  <dl> <dt>
+  <dl> 
+    <dt>
           Description lists
         </dt>
-    <dd>A description list is perfect for defining terms.</dd> <dt>
-          Euismod
+    <dd>A description list is perfect for defining terms.</dd> 
+    <dt>
+          Instructions
         </dt>
-    <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
-    <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+    <dd>Welcome to your "desk" space.  Drag and drop a warm-up and various activites to "Remix" lesson plan soggestions made by your peers.  </dd>
+    <dd>Be sure to save your ideas by clicking on the "Finish and Save" button to submit your remix to your peers for rating and review. </dd>
   </dl>
 
   <!--drag and drop space main container-->
@@ -54,6 +56,7 @@
     <div class="row">
       <!--warm-up List-->
       <div id="warmupList" class="list-group col-md-4">
+        <h1> Popular 3D Printing Projects</h1>
         <div>
           <img src="img/bustwarmup.png" class="img-thumbnail" alt="bustwarmup">
         </div>
@@ -66,6 +69,7 @@
       </div>
       <!-- Simple Lesson Plan List -->
       <div id="activityList" class="list-group col-md-4">
+        <h1> Popular Writing and Research Activities </h1>
         <div class="list-group-item" data-id="1">
           <img src="img/readrespond_activity.png" class="img-thumbnail" alt="read respond">
         </div>
@@ -82,13 +86,13 @@
       <!--ends the activities list-->
 
       <!--display the warmup area for the learner-->
-         <div class="col-md-4"> 
-          <div id="displayWarmupArea">
-        <h1> this is a warmup display space</h1>
+         <div class="col-md-4" id="planningSpace"> 
+          <div id="displayWarmupArea" ondragover="allowDrop(event)">
+        <h1> Drag Your Warmup Here</h1>
       </div>
   
-      <div id="displayActivityArea">
-        <h1> this is a activity space</h1>
+      <div id="displayActivityArea" ondragover="allowDrop(event)">
+        <h1> Drag Your Activities Here</h1>
       </div> 
          <!--Finish and Save button-->
     <button class="btn btn-default ">
