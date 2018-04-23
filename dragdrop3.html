@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <!--link to extra stylesheet-->
   <link href="css/dragdrop3.css" rel="stylesheet">
+   <link href="css/sticky-footer.css" rel="stylesheet">
+   <link href="css/navbar.css" rel="stylesheet">
   <!-- Latest Sortable CDN-->
   <script src="https://rubaxa.github.io/Sortable/Sortable.js"></script>
   <title>Testing Sortable and remixing</title>
@@ -17,7 +19,7 @@
 <body>
   <!--navbar embedded in a header-->
   <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"> <a class="navbar-brand" href="index.html">Sylvie</a>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="remixNavbar"> <a class="navbar-brand" href="index.html">Sylvie</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -50,7 +52,7 @@
         </dt>
     <dd>A description list is perfect for defining terms.</dd> 
     <dt>
-          Instructions
+          Instructions for Remixing 3D Printing Lesson Plans
         </dt>
     <dd>Welcome to your "desk" space.  Drag and drop a warm-up and various activites to "Remix" lesson plan suggestions made by your peers.  </dd>
     <dd>Be sure to save your new plan by clicking on the "Finish and Save" button to submit your remix to your peers for rating and review. </dd>
@@ -65,7 +67,7 @@
     <div class="row">
       <!--warm-up List-->
       <div id="warmupList" class="list-group col-md-4">
-        <h1> Popular 3D Printing Projects</h1>
+        <h1 id="projectHeader"> Popular Warm-Ups</h1>
         <div class="list-group-item">
           <img src="img/bustwarmup.png" class="img-thumbnail" alt="bustwarmup">
           <img src="img/skullprint.jpg" class="img-thumbnail" alt="skull">
@@ -81,7 +83,7 @@
       </div>
       <!-- Simple Lesson Plan List -->
       <div id="activityList" class="list-group col-md-4">
-        <h1>Writing and Research Activities </h1>
+        <h1 id="activityHeader">Current Research Activities </h1>
         <div class="list-group-item" data-id="1">
           <img src="img/readrespond_activity.png" class="img-thumbnail" alt="read respond">
           <img src="img/students respond.jpg" class="img-thumbnail" alt="students on computer">
@@ -103,7 +105,7 @@
 
       <!--display the warmup area for the learner-->
          <div class="col-md-4" id="planningSpace"> 
-          <div>
+          <div id="remixHeader">
             <h1> Your Remixing Space</h1>
           </div>
           <div id="displayWarmupArea" ondragover="allowDrop(event)">
@@ -148,13 +150,12 @@
     </script>
     <script src="https://static.helloumi.com/umiwebchat/umiwebchat.js" defer></script>
 
-            <!--some sort of footer with contact info or copyright etc-->
+<!--some sort of footer with contact info or copyright etc-->
               <footer class="footer" id="remixFooter">
                 <div class="container">
-                  <span class="text-muted">Prototype Version 2 4/24/2018 EDUETCH 790/390 MPL.</span>
+                  <span class="text-muted">Prototype Version 2.1 4/24/2018 EDUETCH 790/390 MPL.</span>
                 </div>
               </footer>
-
 
 
     <!-- Optional JavaScript -->

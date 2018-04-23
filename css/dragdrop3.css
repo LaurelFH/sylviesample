@@ -170,6 +170,9 @@
 #activityList{
 /*  border: 2px solid blue;
 */
+
+  border-left-color:#A6A3DB;
+  border-right-color: #A6A3DB;
 }
 
 #warmupList{
@@ -209,25 +212,57 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 #informationSpace{
-/*  border: solid 3px brown;
-*/
 
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,7db9e8+100&1+0,0+50,0+65 */
+  color: #FFFFFF;
+    /*background-color: #DDDDDD;*/
+    /*opacity: .2;*/
+ /*background: rgb(166,163,219);
 
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b8e1fc+0,a9d2f3+10,90bae4+25,90bcea+37,90bff0+50,6ba8e5+51,a2daf5+83,bdf3fd+100;Blue+Gloss+%231 */
-background: rgb(184,225,252); /* Old browsers */
-background: -moz-linear-gradient(top, rgba(184,225,252,1) 0%, rgba(169,210,243,1) 10%, rgba(144,186,228,1) 25%, rgba(144,188,234,1) 37%, rgba(144,191,240,1) 50%, rgba(107,168,229,1) 51%, rgba(162,218,245,1) 83%, rgba(189,243,253,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(184,225,252,1) 0%,rgba(169,210,243,1) 10%,rgba(144,186,228,1) 25%,rgba(144,188,234,1) 37%,rgba(144,191,240,1) 50%,rgba(107,168,229,1) 51%,rgba(162,218,245,1) 83%,rgba(189,243,253,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(184,225,252,1) 0%,rgba(169,210,243,1) 10%,rgba(144,186,228,1) 25%,rgba(144,188,234,1) 37%,rgba(144,191,240,1) 50%,rgba(107,168,229,1) 51%,rgba(162,218,245,1) 83%,rgba(189,243,253,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8e1fc', endColorstr='#bdf3fd',GradientType=0 ); /* IE6-9 */
+background: linear-gradient(0deg, rgba(166,163,219,0.7852183109571954) 0%, rgba(152,216,193,1) 50%);*/
 }
 
 
-#remixFooter{
-background: rgb(184,225,252); /* Old browsers */
-background: -moz-linear-gradient(top, rgba(184,225,252,1) 0%, rgba(169,210,243,1) 10%, rgba(144,186,228,1) 25%, rgba(144,188,234,1) 37%, rgba(144,191,240,1) 50%, rgba(107,168,229,1) 51%, rgba(162,218,245,1) 83%, rgba(189,243,253,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(184,225,252,1) 0%,rgba(169,210,243,1) 10%,rgba(144,186,228,1) 25%,rgba(144,188,234,1) 37%,rgba(144,191,240,1) 50%,rgba(107,168,229,1) 51%,rgba(162,218,245,1) 83%,rgba(189,243,253,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(184,225,252,1) 0%,rgba(169,210,243,1) 10%,rgba(144,186,228,1) 25%,rgba(144,188,234,1) 37%,rgba(144,191,240,1) 50%,rgba(107,168,229,1) 51%,rgba(162,218,245,1) 83%,rgba(189,243,253,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8e1fc', endColorstr='#bdf3fd',GradientType=0 ); /* IE6-9 */
+/*#remixFooter{
+  border-top: #98D8C1 solid 2px; 
+  border-bottom: #98D8C1 solid 2px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+   Set the fixed height of the footer here 
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there 
+  background-color: #f5f5f5;
+}*/*/
 
+#remixNavbar{
+  background-color: #F1F7FD;
+  color: #A3A3A3;
+}
+
+#projectHeader{
+  /*background-color: #a6a3db;*/
+   background-color: #343A40;
+   color: #FFFFFF;
+   border:#98D8C1 solid 2px;
+
+}
+
+
+#activityHeader{
+/*background-color: #a6a3db;
+*/
+
+ background-color: #343A40;
+   color: #FFFFFF;
+   border:#98D8C1 solid 2px;
+
+}
+
+#remixHeader{
+/*background-color: #a6a3db ;
+
+*/
+background-color: #343A40;
+   color: #FFFFFF;
+   border:#98D8C1 solid 2px;
 }

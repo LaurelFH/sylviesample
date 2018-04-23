@@ -5,4 +5,10 @@ body {
 
 .navbar {
   margin-bottom: 20px;
+  border-bottom:#98D8C1 solid 2px;
+}
+
+.card{
+
+	border:#98D8C1 solid 2px;
 }
